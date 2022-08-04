@@ -1,6 +1,6 @@
 {
   "name": "jf",
-  "homepage": "https://juanfrawn.github.io/portfolio",
+  "homepage": "https://juanfrawn.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build && echo 'juanfrawn.com' > ./build/CNAME",
+    "predeploy": "npm run build && echo juanfrawn.com > ./build/CNAME",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
