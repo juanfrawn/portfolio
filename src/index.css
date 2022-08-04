@@ -1,14 +1,913 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: blue;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary: #17161d;
+    --text-color: #F1F1F1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #2d2c35 #17161d;
+  }
+
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #17161d;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2d2c35;
+    border-radius: 10px;
+    border: 3px solid #2d2c35;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    background-image: url(./img/noise.png);
+}
+
+.navbar__icons {
+    width: 22px;
+}
+
+.gradient {
+    background: linear-gradient(45deg, rgba(255,181,120,1) 0%, rgba(255,173,126,1) 25%, rgba(255,146,146,1) 50%, rgba(255,136,154,1) 75%, rgba(255,99,211,1) 100%);
+}
+
+.gradient-text {
+    background: linear-gradient(60deg, rgba(255,181,120,1) 0%, rgba(255,173,126,1) 25%, rgba(255,146,146,1) 50%, rgba(255,136,154,1) 75%, rgba(255,99,211,1) 100%);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-border {
+    border: double 1px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(var(--primary), var(--primary)), linear-gradient(60deg, rgba(255,181,120,1) 0%, rgba(255,173,126,1) 25%, rgba(255,146,146,1) 50%, rgba(255,136,154,1) 75%, rgba(255,99,211,1) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+}
+
+.underbar::after {
+    content: '';
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 0px;
+    background: linear-gradient(45deg, rgba(255,181,120,1) 0%, rgba(255,173,126,1) 25%, rgba(255,146,146,1) 50%, rgba(255,136,154,1) 75%, rgba(255,99,211,1) 100%);
+}
+
+.navbar__active::before {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    margin-left: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(255,181,120,1) 0%, rgba(255,173,126,1) 25%, rgba(255,146,146,1) 50%, rgba(255,136,154,1) 75%, rgba(255,99,211,1) 100%);
+}
+
+.underbar__left::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background: linear-gradient(45deg, rgba(255,181,120,1) 0%, rgba(255,173,126,1) 25%, rgba(255,146,146,1) 50%, rgba(255,136,154,1) 75%, rgba(255,99,211,1) 100%);
+}
+
+.design__1::after {
+    content: '';
+    width: 384px;
+    height: 420px;
+    left: -10px;
+    top: 10px;
+    border: 1px solid #ff949466;
+    z-index: -1;
+}
+
+.design__2::after {
+    content: '';
+    width: 384px;
+    height: 420px;
+    left: -20px;
+    top: 20px;
+    border: 1px solid #FF929233;
+    z-index: -1;
+}
+
+.design__3::after {
+    content: '';
+    width: 384px;
+    height: 420px;
+    left: -30px;
+    top: 30px;
+    border: 1px solid #ff929215;
+    z-index: -1;
+}
+
+.image__animated {
+    animation: fadeIn 3s ease-in-out;
+    color: #23221e;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-height: 871px) and (min-width: 768px) {
+    .vectors__image::after {
+        content: '';
+        width: 500px;
+        height: 360px;
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        border: 1px solid #FF92927e;
+        z-index: -1;
+    }
+    .vectors__image::before {
+        content: '';
+        width: 500px;
+        height: 360px;
+        position: absolute;
+        top: 20px;
+        left: -20px;
+        border: 1px solid #FF929237;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-height: 1088px) and (min-width: 800px) {
+    .vectors__image::after {
+        width: 600px;
+        height: 400px;
+    }
+    .vectors__image::before {
+        width: 600px;
+        height: 400px;
+    }
+    .underbar::after {
+        width: 120px;
+        height: 4px;
+        margin-left: -60px;
+        bottom: -10px;
+    }
+}
+
+@media screen and (min-width: 1920px) and (min-height: 918px) {
+    .design__1::after {
+        width: 440px;
+        height: 500px;
+    }
+    
+    .design__2::after {
+        width: 440px;
+        height: 500px;
+    }
+    
+    .design__3::after {
+        width: 440px;
+        height: 500px;
+    }
+
+    .underbar::after {
+        height: 4px;
+        bottom: -12px;
+    }
+
+    .underbar__left::after {
+       bottom: -10px;
+    }
+}
+
+/* ---------- Navbar ✅ ---------- */
+@layer components {
+    .navbar {
+        @apply hidden desxs:block transition-all duration-300 fixed
+        z-10 w-full py-3 
+        dessm:py-4
+    }
+
+    .navbar__container {
+        @apply w-10/12 flex place-items-center mx-auto
+        desxl:w-9/12 
+        desxxxl:w-1000 
+    }
+
+    .navbar__logo__container {
+        @apply w-5/12
+    }
+
+    .navbar__logo {
+        @apply w-16 hover:cursor-pointer 
+        deslg:w-18
+        desxxl:w-20
+    }
+
+    .navbar__links__container {
+        @apply w-5/12 font-bold mr-10 text-base
+        deslg:mr-16 
+        desxxl:text-lg
+    }
+
+    .navbar__links__item {
+        @apply ml-24
+        deslg:ml-28
+    }
+
+    .navbar__res__container {
+        @apply w-68 h-12 rounded-4xl bg-navbar backdrop-blur-xl
+        flex justify-around fixed left-1/2 -ml-38 bottom-2 shadow-navbar z-10
+        andlg:bottom-4
+        biglg:h-14 biglg:w-70 biglg:-ml-140 
+        tabsm:w-96 tabsm:-ml-48 tabsm:h-16 tabsm:rounded-4xl
+        tabmd:bottom-6 desxs:hidden
+    }
+
+    .navbar__res__link {
+        @apply flex relative
+    }
+}
+
+/* ---------- Logo ✅ ---------- */
+@layer components  {
+    .container__logo {
+      @apply w-full flex justify-center;
+    }
+    .logo_image {
+        @apply w-14 mt-3 
+        andxs:w-16 andmd:mt-4 andlg:mt-5 
+        bigmd:w-20 
+        tabmd:w-24 tablg:mt-8 
+        desxs:hidden
+    }
+}
+
+/* ---------- Header ✅ ---------- */
+@layer components  {
+    .header__container {
+        @apply mb-20 mx-auto
+        andmd:mb-28 
+        biglg:mb-32 
+        desxs:flex desxs:w-10/12 
+        desmd:py-14 desmd:mb-20 
+        deslg:flex deslg:justify-between deslg:py-6
+        desxl:w-9/12  desxl:py-8 desxl:mb-20
+        desxs:mt-32
+        desxxxl:w-1000 desxxxl:justify-center
+    }
+
+    .header__image {
+        @apply w-60 mx-auto -mt-8 
+        andxs:w-64 
+        andmd:w-68 andmd:-mt-6 
+        andlg:w-88 andlg:-mt-8 
+        biglg:w-96
+        tabsm:w-84 
+        tabmd:w-102 tabmd:-mt-4 
+        tablg:w-107 
+        desxs:order-2 desxs:w-102 
+        desmd:w-104
+        deslg:w-106 deslg:mx-0
+        desxxl:w-108
+    }
+
+    .header__text__container {
+        @apply text-center text-sm mx-auto w-11/12 
+        tabmd:w-10/12
+        desxs:mt-0 desxs:order-1 desxs:text-start desxs:self-center 
+        desxs:w-110
+        deslg:w-111 deslg:mx-0
+    }
+
+    .header__text__name {
+        @apply -mt-14 text-base
+        andlg:-mt-18 
+        bigmd:text-xl bigmd:mb-2 
+        tabsm:text-xl tabsm:mb-0
+        tabmd:-mt-16 tabmd:mb-2 tabmd:text-xxl
+        tablg:text-2xxl tablg:-mt-20
+        desxs:mt-0 desxs:mb-2 desxs:text-xl
+        deslg:text-2xl
+    }
+
+    .header__text__job {
+        @apply font-bold text-5xxl gradient-text gradient leading-10 mb-4 
+        andxs:leading-11 andxs:text-5xxxl
+        andmd:text-6xl andmd:leading-12 
+        bigmd:text-6xxl
+        biglg:text-7xl biglg:leading-12
+        tabsm:text-7xl
+        tabmd:text-7xxl tabmd:mb-6 
+        tablg:text-7xxxl 
+        desxs:text-7xxl
+        deslg:text-7xxxl
+        desxl:text-8xl desxl:mb-3
+    }
+
+    .header__paragraph--small {
+        @apply mb-2 
+        andxs:text-base
+        bigmd:mb-4
+        tabxs:hidden
+    }
+
+    .header__paragraph--medium {
+        @apply mb-4 leading-5 
+        andxs:text-base
+        bigmd:mb-6 bigmd:leading-6
+        tabxs:hidden
+    }
+
+    .header__paragraph--large {
+        @apply hidden mb-4 text-lg 
+        tabxs:block
+        tablg:text-2xl tablg:mb-8 
+        desxs:text-lg 
+        deslg:text-xl
+    }
+
+    .header__paragraph--xlarge {
+        @apply hidden mb-4 text-lg leading-7 
+        tabxs:block tabsm:mb-8 
+        tablg:text-2xl tablg:mb-12 
+        desxs:text-lg desxs:mb-6 desxs:w-106
+        deslg:text-xl deslg:w-111 
+    }
+
+    .header__buttons__container {
+        @apply 
+        tabsm:flex tabsm:justify-center tabsm:w-11/12 tabsm:mx-auto 
+        desxs:flex desxs:justify-start dessm:mx-0
+    }
+}
+
+/* ---------- About ✅ ---------- */
+@layer components  {
+    .about {
+        @apply text-center mb-20 pt-2 
+        andxs:pt-4 
+        andmd:mb-28 
+        biglg:pt-6
+        tabxs:pt-6
+        tablg:pt-18 
+        desxs:pt-28 desxs:mb-48 
+        dessm:pt-32 dessm:mb-20 
+        desmd:pt-40 desmd:mb-48 
+        deslg:mb-52 
+        desxl:mb-60 desxl:pt-60 
+        desxxl:mb-72
+        desxxxl:w-1000  desxxxl:mx-auto
+    }
+
+    .about__container {
+        @apply w-11/12 mx-auto
+        desxs:flex desxs:w-10/12 desxs:mx-auto 
+        desxl:w-9/12
+    }
+
+    .about__image--small {
+        @apply  w-60 h-38 bg-pink mx-auto mb-2 vectors__image relative
+        andxs:w-76 andxs:h-48 
+        andmd:mb-4
+        andlg:h-50 
+        biglg:w-80 biglg:h-56 
+        bigxl:w-84 bigxl:h-60
+        tabxs:w-100 tabxs:h-60
+        tabsm:w-102 tabsm:h-64 
+        tabmd:w-104 tabmd:h-88 tabmd:mb-14 
+        tablg:w-108 tablg:h-97 desxs:hidden
+    }
+
+    .about__image {
+        @apply hidden desxs:block bg-yellow ml-4 relative
+        desxs:w-96 desxs:h-101 
+        desxxl:w-102 desxxl:h-104
+    }
+
+    .about__text {
+        @apply desxs:text-start 
+        desxs:w-full desxs:ml-12 desxs:self-center
+        desxxl:ml-16
+    }
+
+    .about__text__title--small {
+        @apply text-2xxl relative underbar mb-4 font-bold 
+        andlg:text-3xl andlg:mb-4 
+        biglg:text-3xxl 
+        tabxs:mb-3
+        tabsm:text-3xxl 
+        tabmd:mb-5
+        tablg:text-5xl tablg:mb-10 desxs:hidden
+    }
+
+    .about__text__title--big {
+        @apply hidden underbar__left relative font-bold
+        desxs:block text-4xl mb-5 
+        desxxl:text-5xl desxxl:mb-8
+    }
+
+    .about__text__container {
+        @apply text-base
+        andxs:w-full 
+        biglg:text-base biglg:w-full 
+        tabxs:w-10/12 tabxs:mx-auto
+        tabsm:text-lg tabsm:w-full 
+        tablg:w-full tablg:text-lg 
+        desxs:w-full desxs:text-lg
+    }
+
+    .about__paragraph--small {
+        @apply mb-5 
+        tabsm:mb-6
+        tablg:mb-10 
+        desxs:hidden
+    }
+
+    .about__paragraph--medium {
+        @apply hidden 
+        desxs:text-xl desxxl:text-2xl desxxl:leading-8 mb-7
+    }
+
+    .about__paragraph--big {
+        @apply hidden mb-7
+        desxs:block 
+        desxxl:leading-8
+    }
+
+    .about__paragraph--xlarge {
+        @apply mb-4 
+        andmd:mb-6 
+        andlg:mb-8 
+        bigmd:mb-7 
+        tabsm:mb-6 
+        tablg:mb-10 
+        desxs:mb-7 
+        desmd:mb-9
+        desxxl:leading-8 
+    }
+
+    .about__pparagraph--follow {
+        @apply hidden 
+        mb-2 bigmd:block 
+        tabmd:mb-6 
+        desxs:hidden
+    }
+
+    .about__pins__container {
+        @apply hidden mb-2 
+        desxs:grid grid-cols-2 text-lg 
+        desxl:mb-4 
+    }
+
+    .about__buttons__container__res {
+        @apply flex justify-between w-3/5 mx-auto andmd:hidden
+    }
+
+    .about__buttons__container {
+        @apply hidden w-full
+        andmd:block
+        tabxs:flex tabxs:w-full
+        tablg:w-full  
+        desxs:flex desxs:w-4/5
+        dessm:mx-0
+        desmd:w-3/5
+    }
+}
+
+/* ---------- ProjectSmall ✅ ---------- */
+@layer components  {
+    .project__small__container {
+        @apply text-center mb-20 pt-4 
+        andxs:pt-6 
+        andmd:mb-28 
+        biglg:pt-8
+        tablg:pt-14 
+        desxs:hidden
+    }
+
+    .project__small__title {
+        @apply text-2xxl underbar relative mb-4 font-bold 
+        andlg:text-3xl
+        biglg:text-3xxl biglg:mb-6 
+        tabmd:text-4xl
+        tablg:text-5xl tablg:mb-10
+    }
+
+    .project__small__item__container {
+        @apply mx-auto w-11/12
+    }
+
+    .project__small__image__container {
+        @apply max-w-full rounded-lg w-80 h-42 mx-auto mb-4 
+        andxs:w-80 andxs:h-42 
+        bigmd:w-84 bigmd:h-44 bigmd:mb-6 
+        bigxl:w-90 bigxl:h-50 
+        tabxs:w-101 tabxs:h-60
+        tabsm:w-101 tabsm:h-60 tabsm:mb-4
+        tabmd:w-106 tabmd:h-76 tabmd:mb-6
+        tablg:mb-10 tablg:w-110 tablg:h-88
+    }
+
+    .project__small__image {
+        @apply rounded-2xl
+    }
+
+    .project__small__text__container {
+        @apply max-w-full leading-5 text-sm mx-auto 
+        andxs:w-82 andxs:leading-6 
+        bigmd:w-full 
+        tabxs:w-full
+        tabmd:w-full 
+        tablg:w-full
+    }
+
+    .project__small_item__title {
+        @apply font-bold text-xl mb-2
+        andlg:text-xxl
+        bigmd:text-2xl 
+        tabxs:text-2xl
+        tabsm:text-2xxl tabsm:mb-3
+        tabmd:text-3xxl tabmd:mb-8 
+        tablg:text-4xl
+    }
+
+    .project__small__item__description {
+        @apply mb-2 
+        andxs:mb-4 
+        andmd:mb-6
+        bigmd:mb-6 
+        biglg:text-base biglg:mb-7
+        tabxs:mb-4 tabxs:w-11/12 tabxs:mx-auto
+        tabsm:mb-4 
+        tabmd:mb-8 tabmd:text-lg 
+        tablg:text-lg tablg:mb-10 tablg:leading-9
+    }
+
+    .project__small__stack__container {
+        @apply flex justify-evenly mb-4 w-5/6 mx-auto
+        andlg:mb-6
+        biglg:mb-7
+        tabxs:w-3/6
+        tabmd:w-4/6
+        tablg:mb-10
+    }
+
+    .project__small__stack__icon {
+        @apply w-9 
+        bigmd:w-11
+        biglg:w-12
+        tabxs:w-10
+        tabsm:w-11
+        tabmd:w-14
+        tablg:w-18
+        desxxl:w-14
+    }
+
+    .project__small_buttons__container {
+        @apply max-w-full 
+        tabxs:flex tabxs:w-11/12 tabxs:mx-auto 
+        tabmd:w-108
+    }
+}
+
+/* ---------- Project ✅ ---------- */
+@layer components  {
+    .projects {
+        @apply hidden desxs:block 
+        desxs:pt-40 
+        desxl:pt-20
+        desxxl:pt-28
+    }
+
+    .projects__title {
+        @apply underbar relative font-bold text-center text-4xl mb-10
+        desxl:mb-18 
+        desxxl:text-5xl desxxl:mb-24
+    }
+
+    .projects__container {
+        @apply w-10/12 mx-auto 
+        desxl:w-9/12
+    }
+
+    .project__item__container {
+        @apply flex mb-40 justify-center
+    }
+
+    .project__item__img__container {
+        @apply w-106 h-72
+        desxl:w-109  desxl:h-84
+    }
+
+    .project__item__image {
+        @apply rounded-2xl
+    }
+
+    .project__item__text {
+        @apply w-108 self-center 
+        desxxl:w-110
+    }
+
+    .project__item__title {
+        @apply font-bold text-3xl mb-2 
+        desxxl:mb-4
+    }
+
+    .project__item__description {
+        @apply leading-7 mb-8 text-lg
+    }
+
+    .project__stack__container {
+        @apply flex mb-8
+    }
+
+    .project__stack__icon {
+        @apply w-11 mr-4
+        desxxl:w-12
+    }
+
+    .project__buttons__container {
+        @apply flex w-full
+    }
+}
+
+/* ---------- Experience ---------- */
+@layer components  {
+    .expert {
+        @apply text-center mb-20 pt-4
+        andmd:mb-28 
+        bigmd:pt-6
+        tabsm:pt-10
+        tablg:pt-14 
+        desxs:mb-36 desxs:pt-18 
+        dessm:pt-24 dessm:mb-40 
+        desxl:pt-32
+        desxxl:pt-40
+        desxxxl:w-1000 desxxxl:mx-auto
+    }
+
+    .expert__title {
+        @apply text-2xxl underbar relative mb-4 font-bold
+        andlg:mb-6 andlg:text-3xl
+        biglg:text-3xxl
+        tabmd:mb-10 
+        tabmd:text-4xl
+        tablg:text-5xl tablg:mb-12 
+        desxs:text-4xl desxs:mb-14 
+        deslg:mb-18
+        desxxl:text-5xl desxxl:mb-24
+    }
+
+    .expert__container {
+        @apply desxs:flex desxs:w-10/12 desxs:mx-auto desxl:w-9/12
+    }
+
+    .expert__icons__container {
+        @apply grid grid-cols-3 justify-items-center 
+        w-68 gap-x-4 gap-y-8 mx-auto
+        andxs:gap-x-10
+        andmd:gap-x-14
+        andlg:grid-cols-3 andlg:gap-y-14
+        bigmd:w-10/12 bigmd:gap-y-12
+        biglg:gap-y-16 biglg:w-9/12
+        bigxl:gap-y-14
+        tabxs:w-102 tabxs:grid-cols-4 tabxs:gap-x-18 tabxs:mb-10
+        tabmd:gap-y-10 tabmd:gap-x-24 tabmd:mb-12
+        tablg:w-108 tablg:gap-y-12 tablg:mb-18
+        desxs:gap-x-10 desxs:gap-y-16 desxs:mx-0 desxs:w-6/12
+        desxxl:gap-y-24
+    }
+
+    .expert__icon {
+        @apply max-w-none 
+        w-18
+        andxs:w-20 
+        andmd:w-22 
+        bigmd:w-24
+        bigxl:w-26
+        tabxs:w-20 
+        tabmd:w-24 
+        tablg:w-28 
+        desxs:hover:scale-110 desxs:cursor-pointer desxs:transition-transform desxs:duration-500
+        desmd:w-22
+        desxxl:w-24
+    }
+
+    .expert__text__container {
+        @apply hidden 
+        tabxs:grid 
+        tablg:w-110
+        desxs:grid w-6/12 mx-auto 
+        desxs:mx-0
+    }
+
+    .expert__text__item {
+        @apply
+        tabxs:mb-16 
+        tablg:mb-28 
+        desxs:mb-0
+    }
+
+    .expert__text__year {
+        @apply text-lg 
+        tablg:text-xl 
+        desxxl:text-xxl
+    }
+
+    .expert__text__job {
+        @apply text-xl 
+        tablg:text-xxl 
+        desxxl:text-2xl 
+        desxxl:mb-3
+    }
+
+    .expert__text__company {
+        @apply text-base 
+        tablg:text-lg 
+        desxs:text-base 
+        desxxl:text-lg
+    }
+}
+
+/* ---------- Contact ---------- */
+@layer components  {
+    .contact__container {
+        @apply text-center mb-16 pt-4 
+        andxs:pt-6 
+        andlg:mb-20 
+        tabxs:mb-24 
+        tabmd:mb-32 
+        tablg:pt-14 tablg:mb-40
+        desxs:pt-18 desxs:mb-8
+        deslg:pt-24
+        desxl:pt-32
+        desxxxl:w-1000  desxxxl:mx-auto
+    }
+
+    .contact__title {
+        @apply text-2xxl underbar relative mb-4 font-bold
+        andlg:mb-6 andlg:text-3xl
+        biglg:text-3xxl
+        tabmd:mb-8 
+        tabmd:text-4xl
+        tablg:text-5xl tablg:mb-12 
+        desxs:text-4xl desxs:mb-8 
+        deslg:mb-10
+        desxxl:text-5xl
+    }
+
+    .contact__social__container {
+        @apply flex justify-center 
+        gap-x-5 mb-6 
+        andxs:mb-4
+        andlg:mb-6 
+        bigxl:gap-x-7 
+        desxs:mb-8 desxs:gap-x-8
+    }
+
+    .contact__social__icon {
+        @apply w-9 
+        andlg:w-10 
+        bigxl:w-11 
+        tabxs:w-10 
+        tablg:w-16 
+        desxs:w-9 
+        desxxl:w-10
+        animated__button
+    }
+
+    .form {
+        @apply relative w-11/12 h-12 mx-auto mb-6 
+        text-sm
+        andxs:w-82 
+        bigxl:w-10/12 
+        tabxs:w-10/12 
+        tabxs:mb-8 
+        tabmd:w-9/12 
+        tabmd:h-14
+        tablg:w-9/12 tablg:text-base
+        desxs:w-5/12 desxs:text-base
+        desmd:text-lg
+        desxxl:w-4/12
+    }
+
+    .form__text {
+        @apply tablg:h-16 
+        desxs:h-16
+    }
+
+    .form__textarea {
+        @apply form h-40
+        andmd:h-44
+        andlg:h-48
+        bigmd:h-52
+        biglg:h-60
+        tabxs:h-56
+        tablg:h-72
+        desxs:h-60
+        desxl:h-68
+    }
+
+    .form__input {
+        @apply bg-inherit outline-0 border-2 border-peach 
+        absolute top-0 left-0 w-full h-full rounded-xl p-5
+        tabmd:rounded-xl
+    }
+
+    .form__label {
+        @apply absolute left-4 px-2 cursor-text
+        text-pink bg-none rounded-xl
+    }
+}
+
+@layer components {
+    .animated__button {
+        @apply desxs:hover:scale-105 desxs:transition-transform desxs:duration-300 desxs:focus:scale-100 desxs:hover:cursor-pointer
+    }
+
+    .active__link {
+        @apply gradient-text
+    }
+}
+
+.animated__div {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+
+.form__label {
+    top: .9rem;
+    transition:  top 150ms ease-in,
+                left 150ms ease-in,
+                background-color 200ms ease-in,
+                font-size 100ms ease-in;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~.form__label {
+    top: -.5rem;
+    font-size: .8rem;
+    left: .8rem;
+    background-color: var(--primary);
+}
+
+@media (min-width: 768px) and (min-height: 871px) {
+    .form__text .form__label {
+        top: 1.2rem
+    }
+}
+
+@media (min-width: 1280px) and (min-height: 595px) {
+    .form__text .form__label {
+        top: 1.2rem
+    }
+}
+
+@media (min-width: 1280px) and (min-height: 680px) {
+    .form__input:focus ~ .form__label,
+    .form__input:not(:placeholder-shown).form__input:not(:focus) ~.form__label {
+        top: -.7rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1440px) and (min-height: 765px) {
+    .form__text .form__label {
+        top: 1.1rem
+    }
+
+    .form__input:focus ~ .form__label,
+    .form__input:not(:placeholder-shown).form__input:not(:focus) ~.form__label {
+        top: -.8rem;
+    }
 }
