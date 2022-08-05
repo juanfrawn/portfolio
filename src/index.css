@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
 :root {
     --primary: #17161e;
     --text-color: #F1F1F1;
@@ -38,7 +36,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     scroll-behavior: smooth;
-    background-image: url(./img/noise.png);
+    background-image: url(./img/noise.webp);
 }
 
 .navbar__icons {

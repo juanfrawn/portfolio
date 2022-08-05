@@ -1,7 +1,7 @@
 import BigBtn from './Btn/BigBtn';
 import OutlineBtn from './Btn/OutlineBtn';
 
-import heroImage from '../img/hero.png'
+import heroImage from '../img/hero.webp'
 import resume from '../img/resume.pdf'
 
 import {sr} from './Utilities/scrollReveal'

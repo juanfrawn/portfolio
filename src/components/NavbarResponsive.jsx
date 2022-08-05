@@ -31,11 +31,11 @@ const Navbar = () => {
 
     return (
         <div className='navbar__res__container'>
-            <a href='#home' className='navbar__res__link navbar__link navbar__active'><img className='navbar__icons shadow-none tabsm:w-7 relative' src={home} alt="" /></a>
-            <a href='#aboutMe' className='navbar__res__link navbar__link'><img className='navbar__icons shadow-none tabsm:w-7  relative' src={user} alt="" /></a>
-            <a href='#projects' className='navbar__res__link navbar__link'><img className='navbar__icons shadow-none tabsm:w-7  relative' src={work} alt="" /></a>
-            <a href='#experience' className='navbar__res__link navbar__link'><img className='navbar__icons shadow-none tabsm:w-7  relative' src={bracket} alt="" /></a>
-            <a href='#contact' className='navbar__res__link navbar__link'><img className='navbar__icons shadow-none tabsm:w-7  relative' src={at} alt="" /></a>
+            <a href='#home' className='navbar__res__link navbar__link navbar__active'><img className='navbar__icons shadow-none tabsm:w-7 relative' src={home} alt="Home" /></a>
+            <a href='#aboutMe' className='navbar__res__link navbar__link'><img className='navbar__icons shadow-none tabsm:w-7  relative' src={user} alt="About me" /></a>
+            <a href='#projects' className='navbar__res__link navbar__link'><img className='navbar__icons shadow-none tabsm:w-7  relative' src={work} alt="Projects" /></a>
+            <a href='#experience' className='navbar__res__link navbar__link'><img className='navbar__icons shadow-none tabsm:w-7  relative' src={bracket} alt="Work" /></a>
+            <a href='#contact' className='navbar__res__link navbar__link'><img className='navbar__icons shadow-none tabsm:w-7  relative' src={at} alt="Contact" /></a>
         </div>
     )
 }

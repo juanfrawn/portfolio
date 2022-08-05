@@ -44,7 +44,7 @@ const Contact = () => {
                 <SocialIcon icon={gmail} alt='Gmail' />
             </div>
 
-            <form className='flex flex-col contact__form' ref={form} onSubmit={sendEmail} autocomplete="off">
+            <form className='flex flex-col contact__form' ref={form} onSubmit={sendEmail} autoComplete="off">
                 <div className='form form__text'>
                     <input className='form__input' type="text" name="fullName" id="fullName" placeholder=' ' required />
                     <label className='form__label' htmlFor="fullName">Name</label>

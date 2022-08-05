@@ -9,7 +9,7 @@ import cssIcon from '../img/css.svg';
 import htmlIcon from '../img/html.svg';
 import reactIcon from '../img/react.svg';
 
-import project1 from '../img/project_1.jpg'
+import project1 from '../img/project_1.webp'
 
 import {sr} from './Utilities/scrollReveal'
 import { useEffect } from 'react';
