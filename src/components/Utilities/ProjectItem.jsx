@@ -6,7 +6,7 @@ const ProjectItem = ({title, description, img, stack1, stack2, stack3, stack4, t
     return (
         <div className="project__item__container">
             <div className={`project__item__img__container ${align ? 'order-1' : ''}`}>
-                <img className='project__item__image' src={img} alt={title} />
+                <img className='project__item__image ' src={img} alt={title} />
             </div>
             <div className={`project__item__text ${textAlign} ${spacing} ${align ? 'mr-10' : 'ml-10'}`}>
                 <h3 className="project__item__title">{title}</h3>

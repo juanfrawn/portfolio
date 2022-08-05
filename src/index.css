@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -127,7 +129,7 @@ body {
 }
 
 .image__animated {
-    animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
     color: #23221e;
 }
 
@@ -626,7 +628,7 @@ body {
     }
 
     .project__item__image {
-        @apply rounded-2xl
+        @apply rounded-2xl w-full h-full
     }
 
     .project__item__text {
@@ -648,7 +650,7 @@ body {
     }
 
     .project__stack__icon {
-        @apply w-11 mr-4
+        @apply w-11 h-auto mr-4
         desxxl:w-12
     }
 
