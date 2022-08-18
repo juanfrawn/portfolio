@@ -73,17 +73,24 @@ const About = () => {
 
                         <div className='about__buttons__container'>
                             <OutlineBtn 
-                            text={'GitHub'} to={'#'} icon={github} 
+                            target={true}
+                            text={'GitHub'} to={'https://github.com/juanfrawn'} icon={github} 
                             heigth={'h-9 andxs:h-9 bigmd:h-11 tabsm:h-11 tabmd:h-12 tablg:h-14 desxs:h-11 deslg:h-12'} 
                             width={'w-full andxs:w-full biglg:w-88 tabxs:w-1/2 tabxs:mx-4 '} 
                             iconWidth={'tabmd:w-6 deslg:w-7'} iconMargin={'tabmd:mr-2'}
-                            fontSize={'tabmd:text-xl deslg:text-xl'} margin={"mb-4 tabmd:mb-0 desxs:mb-0 desxs:mx-0 desxs:mr-4 deslg:mr-6"}/>
+                            fontSize={'tabmd:text-xl deslg:text-xl'} margin={"mb-4 tabmd:mb-0 desxs:mb-0 desxs:mx-0 desxs:mr-4 deslg:mr-6"}
+                            animation='animated__button'
+                            />
+                            
                             <OutlineBtn 
-                            text={'Instagram'} to={'#'} icon={instagram} 
+                            target={true}
+                            text={'Instagram'} to={'https://www.instagram.com/frowcode/'} icon={instagram} 
                             heigth={'h-9 andxs:h-9 bigmd:h-11 tabsm:h-11 tabmd:h-12 tablg:h-14 desxs:h-11 deslg:h-12'} 
                             width={'w-full andxs:w-full biglg:w-88 tabxs:w-1/2 tabxs:mx-4'}
                             iconWidth={'tabmd:w-6 deslg:w-7'} iconMargin={'tabmd:mr-2'} 
-                            fontSize={'tabmd:text-xl deslg:text-xl'} margin={"desxs:mx-0 desxs:mb-0"} />
+                            fontSize={'tabmd:text-xl deslg:text-xl'} margin={"desxs:mx-0 desxs:mb-0"} 
+                            animation='animated__button'
+                            />
                         </div>
                     </div>
                 </div>

@@ -38,10 +38,10 @@ const Contact = () => {
         <section className="contact__container section__res section__des" id="contact">
             <h2 className="contact__title">Contact</h2>
             <div className='contact__social__container'>
-                <SocialIcon icon={instagram} alt='Instagram' />
-                <SocialIcon icon={git} alt='GitHub' />
-                <SocialIcon icon={linkedin} alt='LinkedIn' />
-                <SocialIcon icon={gmail} alt='Gmail' />
+                <SocialIcon to="https://www.instagram.com/frowcode/" icon={instagram} alt='Instagram' />
+                <SocialIcon to="https://github.com/juanfrawn" icon={git} alt='GitHub' />
+                <SocialIcon to="https://www.linkedin.com/in/juanfrawn/" icon={linkedin} alt='LinkedIn' />
+                <SocialIcon to="mailto:juanfrawn@gmail.com" icon={gmail} alt='Gmail' />
             </div>
 
             <form className='flex flex-col contact__form' ref={form} onSubmit={sendEmail} autoComplete="off">

@@ -1,7 +1,8 @@
-const SocialIcon = ({ icon, alt }) => {
+const SocialIcon = ({ icon, alt, to }) => {
     return (
-        <img className='contact__social__icon' src={icon} alt={alt} />
-                    
+        <a href={to} target="_blank" rel="noopener noreferrer">
+            <img className='contact__social__icon' src={icon} alt={alt} />
+        </a>            
     )
 }
 
