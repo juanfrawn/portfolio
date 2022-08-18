@@ -145,7 +145,6 @@ module.exports = {
       'deslg': { 'raw': '(min-width: 1600px) and (min-height: 765px)'},
       'desxl': { 'raw': '(min-width: 1680px) and (min-height: 893px)'},
       'desxxl': { 'raw': '(min-width: 1920px) and (min-height: 918px)'},
-      'desxxxl': { 'raw': '(min-width: 2200px) and (min-height: 800px)'},
       
     }
   },

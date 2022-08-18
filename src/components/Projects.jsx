@@ -10,6 +10,7 @@ import htmlIcon from '../img/html.svg';
 import reactIcon from '../img/react.svg';
 
 import project1 from '../img/project_1.webp'
+import project2 from '../img/project_2.webp'
 
 import {sr} from './Utilities/scrollReveal'
 import { useEffect } from 'react';
@@ -32,11 +33,13 @@ const Projects = () => {
                 >
                     <SwiperSlide>
                         <ProjectItemRes
-                            img={project1}
-                            title="Web3 Exchange Tracker" 
-                            description='A crypto conversion app like Coinbase using NextJS, Solidity, thirdweb SDK, Sanity as a headless CMS, authentication with Metamask, and styled-components for styling.'
-                            stack1={jsIcon} stack2={cssIcon} stack3={htmlIcon} stack4={reactIcon}
-                    />
+                            img={project2}
+                            title="Real State Website" 
+                            description='Responsive real state website using HTML CSS & JavaScript. Contains animations when scrolling, dark and light mode. Developed first with the Mobile First methodology, then for desktop'
+                            stack1={htmlIcon} stack2={cssIcon} stack3={jsIcon}
+                            demoLink="https://juanfrawn.github.io/real-state-page/"
+                            codeLink="https://github.com/juanfrawn/real-state-page"
+                        />
                     </SwiperSlide>
                     <SwiperSlide>
                         <ProjectItemRes
@@ -64,10 +67,12 @@ const Projects = () => {
                 
                 <div className="projects__container">
                     <ProjectItem 
-                        img={project1}
-                        title="Web3 Exchange Tracker" 
-                        description='A crypto conversion app like Coinbase using NextJS, Solidity, thirdweb SDK, Sanity as a headless CMS, authentication with Metamask, and styled-components for styling.'
-                        stack1={jsIcon} stack2={cssIcon} stack3={htmlIcon} stack4={reactIcon}
+                        img={project2}
+                        title="Real State Website" 
+                        description='Responsive real state website using HTML CSS & JavaScript. Contains animations when scrolling, dark and light mode. Developed first with the Mobile First methodology, then for desktop'
+                        stack1={htmlIcon} stack2={cssIcon} stack3={jsIcon}
+                        demoLink="https://juanfrawn.github.io/real-state-page/"
+                        codeLink="https://github.com/juanfrawn/real-state-page"
                     />
 
                     <ProjectItem 

@@ -2,7 +2,7 @@ import OutlineBtn from '../Btn/OutlineBtn'
 import demo from '../../img/bx-window.svg';
 import code from '../../img/bxl-github.svg';
 
-const ProjectItem = ({title, description, img, stack1, stack2, stack3, stack4, textAlign, align, spacing }) => {
+const ProjectItem = ({title, description, img, stack1, stack2, stack3, stack4, textAlign, align, spacing, demoLink, codeLink }) => {
     return (
         <div className="project__item__container">
             <div className={`project__item__img__container ${align ? 'order-1' : ''}`}>
@@ -17,11 +17,12 @@ const ProjectItem = ({title, description, img, stack1, stack2, stack3, stack4, t
                     <img className="project__stack__icon" src={stack1} alt="" />
                     <img className="project__stack__icon" src={stack2} alt="" />
                     <img className="project__stack__icon" src={stack3} alt="" />
-                    <img className="project__stack__icon" src={stack4} alt="" />
+                    <img className={`project__stack__icon ${stack4 ? '' : 'hidden'}`} src={stack4} alt="" />
                 </div>
                 <div className={`project__buttons__container ${align}`}>
                 <OutlineBtn 
-                    text={'Demo'} to={'#'} icon={demo} 
+                    target={true}
+                    text={'Demo'} to={demoLink} icon={demo} 
                     heigth={'h-10 desxxl:h-11'} 
                     width={'w-1/2 desmd:w-2/5 '} 
                     iconWidth={'w-6'} iconMargin={'desxs:mr-2'}
@@ -30,7 +31,8 @@ const ProjectItem = ({title, description, img, stack1, stack2, stack3, stack4, t
                     animation='animated__button nav__links bg-btnColor'
                 />
                 <OutlineBtn 
-                    text={'Code'} to={'#'} icon={code} 
+                    target={true}
+                    text={'Code'} to={codeLink} icon={code} 
                     heigth={'h-10 desxxl:h-11'} 
                     iconWidth={'w-6 '} iconMargin={'desxs:mr-2'}
                     fontSize={'text-lg desxxl:text-xl'}

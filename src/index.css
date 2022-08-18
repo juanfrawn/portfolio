@@ -218,7 +218,6 @@ body {
     .navbar__container {
         @apply w-10/12 flex place-items-center mx-auto
         desxl:w-9/12 
-        desxxxl:w-1000 
     }
 
     .navbar__logo__container {
@@ -281,7 +280,6 @@ body {
         deslg:flex deslg:justify-between deslg:py-6
         desxl:w-9/12  desxl:py-8 desxl:mb-20
         desxs:mt-32
-        desxxxl:w-1000 desxxxl:justify-center
     }
 
     .header__image {
@@ -384,7 +382,6 @@ body {
         deslg:mb-52 
         desxl:mb-60 desxl:pt-60 
         desxxl:mb-72
-        desxxxl:w-1000  desxxxl:mx-auto
     }
 
     .about__container {
@@ -671,7 +668,6 @@ body {
         dessm:pt-24 dessm:mb-40 
         desxl:pt-32
         desxxl:pt-40
-        desxxxl:w-1000 desxxxl:mx-auto
     }
 
     .expert__title {
@@ -769,7 +765,6 @@ body {
         desxs:pt-18 desxs:mb-8
         deslg:pt-24
         desxl:pt-32
-        desxxxl:w-1000  desxxxl:mx-auto
     }
 
     .contact__title {
@@ -909,5 +904,53 @@ body {
     .form__input:focus ~ .form__label,
     .form__input:not(:placeholder-shown).form__input:not(:focus) ~.form__label {
         top: -.8rem;
+    }
+}
+
+@media (min-width: 2200px) {
+    body {
+        zoom: 1.2;
+    }
+}
+
+@media (min-width: 2400px) {
+    body {
+        zoom: 1.4;
+    }
+}
+
+@media (min-width: 2800px) {
+    body {
+        zoom: 1.5;
+    }
+}
+
+@media (min-width: 3200px) {
+    body {
+        zoom: 1.6;
+    }
+}
+
+@media (min-width: 3600px) {
+    body {
+        zoom: 2;
+    }
+}
+
+@media (min-width: 4000px) {
+    body {
+        zoom: 2.1;
+    }
+}
+
+@media (min-width: 4300px) {
+    body {
+        zoom: 2.3;
+    }
+}
+
+@media (min-width: 4800px) {
+    body {
+        zoom: 2.5;
     }
 }
