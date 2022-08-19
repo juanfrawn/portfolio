@@ -7,7 +7,7 @@ const ProjecItemRes = ({title, img, description, stack1, stack2, stack3, stack4,
     return (
         <div className="project__small__item__container">
             <div className='project__small__image__container'>
-                <img className="project__small__image" src={img} alt={title} />
+                <img className="project__small__image object-cover" src={img} alt={title} />
             </div>
             <div className="project__small__text__container">
                 <h3 className="project__small_item__title">

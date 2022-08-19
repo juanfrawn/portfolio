@@ -8,6 +8,7 @@ import jsIcon from '../img/js.svg';
 import cssIcon from '../img/css.svg';
 import htmlIcon from '../img/html.svg';
 import reactIcon from '../img/react.svg';
+import tailIcon from '../img/tailwind.svg';
 
 import project1 from '../img/project_1.webp'
 import project2 from '../img/project_2.webp'
@@ -33,7 +34,7 @@ const Projects = () => {
                 >
                     <SwiperSlide>
                         <ProjectItemRes
-                            img={project2}
+                            img={project1}
                             title="Real State Website" 
                             description='Responsive real state website using HTML CSS & JavaScript. Contains animations when scrolling, dark and light mode. Developed first with the Mobile First methodology, then for desktop'
                             stack1={htmlIcon} stack2={cssIcon} stack3={jsIcon}
@@ -41,6 +42,19 @@ const Projects = () => {
                             codeLink="https://github.com/juanfrawn/real-state-page"
                         />
                     </SwiperSlide>
+                    
+                    <SwiperSlide>
+                        <ProjectItemRes
+                            img={project2}
+                            title="Personal Portfolio" 
+                            description='Responsive portfolio website usign React, Tailwind & JavaScript. Contains animations when scrolling, contact form and developed with the Mobile First methodology.'
+                            stack1={cssIcon} stack2={jsIcon} stack3={tailIcon} stack4={reactIcon}
+                            demoLink="https://www.juanfrawn.com"
+                            codeLink="https://github.com/juanfrawn/portfolio"
+                    />
+                    </SwiperSlide>
+                    {
+    /* 
                     <SwiperSlide>
                         <ProjectItemRes
                             img={project1}
@@ -49,14 +63,8 @@ const Projects = () => {
                             stack1={jsIcon} stack2={cssIcon} stack3={htmlIcon} stack4={reactIcon}
                     />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItemRes
-                            img={project1}
-                            title="Web3 Exchange Tracker" 
-                            description='A crypto conversion app like Coinbase using NextJS, Solidity, thirdweb SDK, Sanity as a headless CMS, authentication with Metamask, and styled-components for styling.'
-                            stack1={jsIcon} stack2={cssIcon} stack3={htmlIcon} stack4={reactIcon}
-                    />
-                    </SwiperSlide>
+*/
+}                    
                 </Swiper>
                 </div>
             </div>
@@ -67,28 +75,33 @@ const Projects = () => {
                 
                 <div className="projects__container">
                     <ProjectItem 
-                        img={project2}
+                        img={project1}
                         title="Real State Website" 
                         description='Responsive real state website using HTML CSS & JavaScript. Contains animations when scrolling, dark and light mode. Developed first with the Mobile First methodology, then for desktop'
                         stack1={htmlIcon} stack2={cssIcon} stack3={jsIcon}
                         demoLink="https://juanfrawn.github.io/real-state-page/"
                         codeLink="https://github.com/juanfrawn/real-state-page"
                     />
-
+ 
                     <ProjectItem 
-                        img={project1}
-                        title="Web3 Exchange Tracker" 
-                        description='A crypto conversion app like Coinbase using NextJS, Solidity, thirdweb SDK, Sanity as a headless CMS, authentication with Metamask, and styled-components for styling.'
-                        stack1={jsIcon} stack2={cssIcon} stack3={htmlIcon} stack4={reactIcon}
+                        img={project2}
+                        title="Personal Portfolio" 
+                        description='Responsive portfolio website usign React, Tailwind & JavaScript. Contains animations when scrolling, contact form and developed with the Mobile First methodology.'
+                        stack1={cssIcon} stack2={jsIcon} stack3={tailIcon} stack4={reactIcon}
                         align={'justify-end'} textAlign={'text-end'} spacing=""
+                        demoLink="https://www.juanfrawn.com"
+                        codeLink="https://github.com/juanfrawn/portfolio"
                     />
-
+{
+    /*
                     <ProjectItem 
                         img={project1}
                         title="Web3 Exchange Tracker" 
                         description='A crypto conversion app like Coinbase using NextJS, Solidity, thirdweb SDK, Sanity as a headless CMS, authentication with Metamask, and styled-components for styling.'
                         stack1={jsIcon} stack2={cssIcon} stack3={htmlIcon} stack4={reactIcon}
                     />
+                    */
+}
                 </div>
             </section>
         </>
