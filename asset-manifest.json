@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ea0e6d15.css",
-    "main.js": "/static/js/main.ab63cd70.js",
+    "main.css": "/static/css/main.35b001e7.css",
+    "main.js": "/static/js/main.6c67cdc2.js",
+    "static/media/project_3.webp": "/static/media/project_3.72e9ab64804031e2ec0e.webp",
     "static/media/project_1.webp": "/static/media/project_1.643981c3822c9fbb9eed.webp",
     "static/media/project_2.webp": "/static/media/project_2.50357e6ef021297d0be0.webp",
     "static/media/resume.pdf": "/static/media/resume.42e44555427c261604df.pdf",
     "static/media/hero.webp": "/static/media/hero.5a12d9bc656d4532ef76.webp",
     "static/media/ig.svg": "/static/media/ig.1aeecd93a51dd25863c88e895cc7a6c9.svg",
     "static/media/react.svg": "/static/media/react.4f188dbb992cfefdf42c32d5e3ddc4c0.svg",
+    "static/media/router.svg": "/static/media/router.36670e740e0bce9384fba188b32433f4.svg",
     "static/media/noise.webp": "/static/media/noise.b645f68ffaa7fbfadf6f.webp",
     "static/media/redux.svg": "/static/media/redux.07c7ca2ce1421a6c0d2692fa45594352.svg",
     "static/media/node.svg": "/static/media/node.2be0b8fb26e8480f864999cfddfd9056.svg",
@@ -23,7 +25,6 @@
     "static/media/in.svg": "/static/media/in.f77c55b5d7f964d673d8bd779ec18636.svg",
     "static/media/gm.svg": "/static/media/gm.61e78f68e988a498c831c65655d86ecc.svg",
     "static/media/bxl-github.svg": "/static/media/bxl-github.fe3ea5701e7e3ed2daf99111db096534.svg",
-    "static/media/mongo.svg": "/static/media/mongo.d25a651676273ccf0c5f825aeb936660.svg",
     "static/media/at.svg": "/static/media/at.9bc37e8ce096c59929eaad321204116a.svg",
     "static/media/brackets-curly.svg": "/static/media/brackets-curly.2e874d3dbaced185c45731d6ea78cced.svg",
     "static/media/html.svg": "/static/media/html.4478e5700bda6fd182efdb39ad68e97d.svg",
@@ -33,11 +34,11 @@
     "static/media/arrow.svg": "/static/media/arrow.0b221238deb6da65a53d6fef4bb72d4a.svg",
     "index.html": "/index.html",
     "static/media/bx-window.svg": "/static/media/bx-window.f83fc20e6d95ab0dce33ea6c4b209c41.svg",
-    "main.ea0e6d15.css.map": "/static/css/main.ea0e6d15.css.map",
-    "main.ab63cd70.js.map": "/static/js/main.ab63cd70.js.map"
+    "main.35b001e7.css.map": "/static/css/main.35b001e7.css.map",
+    "main.6c67cdc2.js.map": "/static/js/main.6c67cdc2.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea0e6d15.css",
-    "static/js/main.ab63cd70.js"
+    "static/css/main.35b001e7.css",
+    "static/js/main.6c67cdc2.js"
   ]
 }
