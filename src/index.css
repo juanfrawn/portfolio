@@ -620,7 +620,7 @@ body {
     }
 
     .project__item__img__container {
-        @apply w-106 h-72
+        @apply w-106 h-72 rounded-2xl
         desxl:w-109  desxl:h-84
     }
 
@@ -703,7 +703,7 @@ body {
     }
 
     .expert__icon {
-        @apply max-w-none 
+        @apply max-w-none self-center
         w-18
         andxs:w-20 
         andmd:w-22 

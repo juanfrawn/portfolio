@@ -10,7 +10,7 @@ import tailIcon from '../img/tailwind.svg';
 import gitIcon from '../img/git.svg';
 import sassIcon from '../img/sass.svg';
 import nodeIcon from '../img/node.svg';
-import mongoIcon from '../img/mongo.svg';
+import routerIcon from '../img/router.svg';
 import expressIcon from '../img/express.svg';
 import reduxIcon from '../img/redux.svg';
 
@@ -39,7 +39,7 @@ const Experience = () => {
                     <SkillIcon icon={gitIcon} alt='Git' />
                     <SkillIcon icon={sassIcon} alt='Sass' />
                     <SkillIcon icon={nodeIcon} alt='Node' />
-                    <SkillIcon icon={mongoIcon} alt='MongoDB' />
+                    <SkillIcon icon={routerIcon} alt='MongoDB' />
                     <SkillIcon icon={expressIcon} alt='Express' />
                     <SkillIcon icon={reduxIcon} alt='Redux' />
                 </div>
