@@ -10,10 +10,12 @@ import htmlIcon from '../img/html.svg';
 import reactIcon from '../img/react.svg';
 import tailIcon from '../img/tailwind.svg';
 import routerIcon from '../img/router.svg';
+import nextIcon from '../img/nex.svg';
 
 import project1 from '../img/project_1.webp'
 import project2 from '../img/project_2.webp'
 import project3 from '../img/project_3.webp'
+import project4 from '../img/project_4.webp'
 
 import {sr} from './Utilities/scrollReveal'
 import { useEffect } from 'react';
@@ -42,6 +44,17 @@ const Projects = () => {
                             stack1={htmlIcon} stack2={cssIcon} stack3={jsIcon}
                             demoLink="https://juanfrawn.github.io/real-state-page/"
                             codeLink="https://github.com/juanfrawn/real-state-page"
+                        />
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <ProjectItemRes
+                            img={project4}
+                            title="Proplay App" 
+                            description='Responsive video player app, using Next.js, Tailwind & React. connects to a Youtube API and displays any video. Contains channels page, video page and search page. Fully responsive.'
+                            stack1={jsIcon} stack2={tailIcon} stack3={routerIcon} stack4={reactIcon}
+                            demoLink="https://proplay.vercel.app/"
+                            codeLink="https://github.com/juanfrawn/proplay"
                         />
                     </SwiperSlide>
                     
@@ -85,21 +98,31 @@ const Projects = () => {
                     />
  
                     <ProjectItem 
+                        img={project4}
+                        title="Proplay App" 
+                        description='Responsive video player app, using Next.js, Tailwind & React. connects to a Youtube API and displays any video. Contains channels page, video page and search page. Fully responsive.'
+                        stack1={nextIcon} stack2={reactIcon} stack3={tailIcon} stack4={cssIcon}
+                        align={'justify-end'} textAlign={'text-end'} spacing=""
+                        demoLink="https://proplay.vercel.app/"
+                        codeLink="https://github.com/juanfrawn/proplay"
+                    />
+
+    
+                    <ProjectItem 
                         img={project2}
                         title="Personal Portfolio" 
                         description='Responsive portfolio website usign React, Tailwind & JavaScript. Contains animations when scrolling, contact form and developed with the Mobile First methodology.'
                         stack1={cssIcon} stack2={jsIcon} stack3={tailIcon} stack4={reactIcon}
-                        align={'justify-end'} textAlign={'text-end'} spacing=""
                         demoLink="https://www.juanfrawn.com"
                         codeLink="https://github.com/juanfrawn/portfolio"
                     />
 
-    
                     <ProjectItem 
                         img={project3}
                         title="Search Engine" 
                         description='A search engine usign React, Router Dom, Tailwind & JavaScript. Connects to a Google Search API and displays any results, image or news. Contains dark mode and completely responsive.'
                         stack1={jsIcon} stack2={tailIcon} stack3={routerIcon} stack4={reactIcon}
+                        align={'justify-end'} textAlign={'text-end'} spacing=""
                         demoLink="https://juanfrawn-search-engine.netlify.app/"
                         codeLink="https://github.com/juanfrawn/search-engine"
                     />
