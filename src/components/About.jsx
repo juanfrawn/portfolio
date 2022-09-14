@@ -9,6 +9,8 @@ import linkedin from '../img/in.svg';
 import {sr} from './Utilities/scrollReveal'
 import { useEffect } from 'react';
 
+import foto from '../img/foto.png'
+
 const About = () => {
     useEffect(() => {
         sr.reveal('.about__image')
@@ -20,20 +22,20 @@ const About = () => {
             <div className='about__container'>
                 <div>
                     <div className='about__image'>
-                        <div className='design__1 desxs:after:absolute'></div>
-                        <div className='design__2 desxs:after:absolute'></div>
-                        <div className='design__3 desxs:after:absolute'></div>
+                        <img src={foto} alt="" />
                     </div>
                 </div>
                 <div className='about__text'>
                     <h2 className="about__text__title--small">About me</h2>
                     <h2 className="about__text__title--big">About me</h2>
 
-                    <div className='about__image--small'></div>
+                    <div className='about__image--small'>
+                        <img src={foto} alt="" />
+                    </div>
                     
                     <div className="about__text__container">
                         <p className="about__paragraph--small">
-                            I'm a software developer who loves building full-stack applications & learning 
+                            I'm a Frontend developer who loves building full-stack applications & learning 
                             new technologies. 🔨
                         </p>
 
@@ -42,7 +44,7 @@ const About = () => {
                         </p>
 
                         <p className="about__paragraph--big">
-                        I'm a software developer who loves building full-stack applications & 
+                        I'm a Frontend developer who loves building full-stack applications & 
                         learning new technologies. I’ve also like to share about the topics 
                         from which I learn.
                         </p>
@@ -61,7 +63,7 @@ const About = () => {
                             </div>
                             <div>
                                 <PinItem content='React | Next' />
-                                <PinItem content='Mongo | Express' />
+                                <PinItem content='Tailwind | Bootstrap' />
                             </div>
                         </div>
 
@@ -84,7 +86,7 @@ const About = () => {
                             
                             <OutlineBtn 
                             target={true}
-                            text={'Instagram'} to={'https://www.instagram.com/frowcode/'} icon={instagram} 
+                            text={'LinkedIn'} to={'https://www.linkedin.com/in/juanfrawn/'} icon={linkedin} 
                             heigth={'h-9 andxs:h-9 bigmd:h-11 tabsm:h-11 tabmd:h-12 tablg:h-14 desxs:h-11 deslg:h-12'} 
                             width={'w-full andxs:w-full biglg:w-88 tabxs:w-1/2 tabxs:mx-4'}
                             iconWidth={'tabmd:w-6 deslg:w-7'} iconMargin={'tabmd:mr-2'} 
